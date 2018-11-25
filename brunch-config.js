@@ -36,14 +36,16 @@ exports.npm = {
   globals: {
     $: 'jquery',
     jQuery: 'jquery',
+    popper: 'popper.js',
     bootstrap: 'bootstrap',
+    material: 'daemonite-material',
     textillate: 'textillate',
     letteringjs: 'letteringjs',
     jqueyValidation: 'jquery-validation'
   },
 
   styles: {
-    'bootstrap': ['dist/css/bootstrap.css'],
+    'daemonite-material': ['css/material.css'],
     'font-awesome': ['css/font-awesome.css'],
     'node-waves': ['dist/waves.css'],
 
