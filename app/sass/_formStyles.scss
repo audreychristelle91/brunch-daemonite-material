@@ -1,0 +1,224 @@
+@font-face{
+	font-family: 'Segoe UI';
+	src: url('font/segoeuisl.ttf') ;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', sans-serif;
+	color: #666;
+}
+header{
+	background-color: #f4f7f9;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 100;
+}
+header p{
+	color: #666;
+	float: right;
+	font-size: 0.8em;
+	margin: 1.3em 2em 0 0;
+}
+header #formTitle p{
+	float: left;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 0.6em 0 0 2em;
+}
+#formContainer{
+	display: flex;
+}
+nav#formTabsContainer{
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	background-color: #f4f7f9;
+}
+nav#formTabsContainer .tab a.tabTitle{
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding: 0.5em 2em;
+}
+nav#formTabsContainer .tab a.tabTitle:hover{
+	background-color: #3e8ddd;
+	color: #fff;
+}
+nav#formTabsContainer .tab.focused a.tabTitle{
+	background-color: #3e8ddd;
+	color: #fff;
+}
+#formContainer #formElementContainer{
+	width: 100%;
+	padding: 3em 2em;
+	margin-left: 20%;
+}
+#formContainer #formElementContainer .formRow{
+	display: flex;
+	flex-direction: row;
+	margin: 1em 0;
+}
+#formContainer #formElementContainer .formRow .input{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-right: 2em;
+}
+input.textBox, textarea.textArea, select.list{
+	border: 1px solid #ccc;
+	border-radius: 0.2em;
+	padding: 0.5em;
+}
+input.textBox.date{
+  max-width: 10em;
+}
+input.textBox.time{
+  max-width: 5em;
+}
+.input video, .input img{
+  width: 100%;
+}
+
+
+/* checkbox */
+#formContainer #formElementContainer .formRow .input .checkboxContainer{
+	width: 100%;
+}
+.checkBox {
+  position: relative;
+  margin: 5px 2em 0 0;
+  float: left;
+  min-width: 20%;
+}
+.checkBox label {
+  width: 20px;
+  height: 20px;
+  margin-top: 0.2em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.checkBox label:after {
+  content: '';
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 3px solid #3e8ddd;
+  border-top: none;
+  border-right: none;
+  background: transparent;
+  opacity: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkBox label:hover::after {
+  opacity: 0.3;
+}
+.checkBox input[type=checkbox] {
+  visibility: hidden;
+  margin-right: 0.5em;
+}
+.checkBox input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+.checkBox label.disabled {
+  background-color: #eee;
+  cursor: auto;
+}
+.checkBox label.disabled:hover::after {
+  opacity: 0;
+}
+
+
+
+/* radio button */
+
+.radioButtonContainer{
+	width: 100%;
+}
+.radioButtonContainer .radioButton{
+	min-width: 30%;
+	float: left;
+	margin-right: 0.5em;
+	margin-bottom: 0.2em;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #3e8ddd;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* button */
+.formButton{
+  border-style: none;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #3e8ddd;
+  color: #fff;
+  margin: 0 0.2em;
+}
+.formButton.disabled{
+  background-color: #eee;
+  color: #aaa;
+}
+.formButton.cancel{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #666;
+}

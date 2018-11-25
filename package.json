@@ -1,0 +1,24 @@
+{
+  "name": "brunch-sass",
+  "version": "0.1.0",
+  "devDependencies": {
+    "sass-brunch": "^2.10.4"
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "brunch": "^2.10.12",
+    "daemonite-material": "^4.0.0",
+    "jquery": "^3.3.1",
+    "jquery-validation": "^1.17.0",
+    "letteringjs": "^0.7.0",
+    "node-waves": "^0.7.6",
+    "npm-run-all": "^4.1.2",
+    "pickadate": "^3.5.6",
+    "popper.js": "^1.12.9",
+    "textillate": "^0.4.1"
+  }
+}

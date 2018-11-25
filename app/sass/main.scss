@@ -1,0 +1,42 @@
+
+//@import 'formStyles';
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('font/segoeuisl.ttf') ;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+h4 {
+  font-weight: bold;
+}
+
+img {
+  width: 33rem;
+}
+
+video {
+  width: 33rem;
+}
+.container {
+  margin-left: 18.5rem;
+  margin-top: 1rem;
+}
+
+
+/*********************************
+**          FORMULAIRE          **
+**********************************/
+
+#form textarea {
+//  width: 50rem;
+//  height: 5rem;
+  resize: none; /* Pour éviter d'agrandir la zone de texte */
+}
+
+
+#message-error {
+	color: #E9446D;
+}
