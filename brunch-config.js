@@ -48,7 +48,6 @@ exports.npm = {
     'daemonite-material': ['css/material.css'],
     'font-awesome': ['css/font-awesome.css'],
     'node-waves': ['dist/waves.css'],
-
   }
 };
 

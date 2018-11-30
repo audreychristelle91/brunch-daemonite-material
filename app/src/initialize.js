@@ -25,6 +25,8 @@ var app = {
 	    }
 	  });
 
+    //slider
+    $('.carousel').carousel();
 
   }
 

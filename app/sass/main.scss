@@ -5,3 +5,45 @@
 	font-family: 'Segoe UI';
 	src: url('font/segoeuisl.ttf') ;
 }
+
+
+.carousel-control-next {
+	background-image: url('../img/arrow_next.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	box-shadow: none;
+}
+
+
+
+.carousel-control-prev {
+	background-image: url('../img/arrow_prev.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	box-shadow: none;
+}
+
+
+.carousel-control-prev:hover {
+	transition: all 0.8s ease-out;
+	background-image: url('../img/arrow_hover_prev.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+
+.carousel-control-next:hover {
+	transition: all 0.8s ease-out;
+	background-image: url('../img/arrow_hover_next.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+.d-block w-100 {
+	position: fixed;
+	width: 100px;
+}
