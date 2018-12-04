@@ -1,11 +1,4 @@
 
-//@import 'formStyles';
-
-@font-face {
-	font-family: 'Segoe UI';
-	src: url('font/segoeuisl.ttf') ;
-}
-
 
 .carousel-control-next {
 	background-image: url('../img/arrow_next.png');
@@ -46,4 +39,14 @@
 .d-block w-100 {
 	position: fixed;
 	width: 100px;
+}
+
+
+
+//Map style
+
+#map {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
 }

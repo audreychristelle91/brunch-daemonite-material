@@ -41,13 +41,21 @@ exports.npm = {
     material: 'daemonite-material',
     textillate: 'textillate',
     letteringjs: 'letteringjs',
-    jqueyValidation: 'jquery-validation'
+    jqueyValidation: 'jquery-validation',
+    omnivore: 'leaflet-omnivore',
+    mapboxgl: 'mapbox-gl',
+    leaflet: 'leaflet',
+    mapboxGlLeaflet: 'mapbox-gl-leaflet',
+    markercluster: 'leaflet.markercluster'
   },
 
   styles: {
     'daemonite-material': ['css/material.css'],
     'font-awesome': ['css/font-awesome.css'],
     'node-waves': ['dist/waves.css'],
+    'leaflet': ['dist/leaflet.css'],
+    'leaflet.markercluster': ['dist/MarkerCluster.css','dist/MarkerCluster.Default.css'],
+    'mapbox-gl': ['dist/mapbox-gl.css'],
   }
 };
 

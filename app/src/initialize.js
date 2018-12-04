@@ -28,6 +28,34 @@ var app = {
     //slider
     $('.carousel').carousel();
 
+    // initialize the map on the "map" div with a given center and zoom
+   var map = L.map('map', {
+        center: [36.204824, 138.252924],
+        zoom: 5,
+        maxZoom: 18,
+        minZoom: 4
+    });
+
+
+   // Adding Mapbox
+    var gl = L.mapboxGL({
+        accessToken: '<token>',
+        style: 'mapbox://styles/saori91/cjj0csi7n0g6r2smpzioxf30j'
+    }).addTo(map);
+    map.fitWorld();
+
+   // Adding OpenStreetMap
+   // map.addLayer(tiles);
+
+    var markers = L.markerClusterGroup();
+
+    var geojsonLayer = omnivore.geojson('http://esombe-5.scan-world.info/posts/5000/geojson')
+    .on("ready", function() {
+    markers.addLayer(geojsonLayer);
+    markers.addTo(map);
+    });
+
+
   }
 
 };
