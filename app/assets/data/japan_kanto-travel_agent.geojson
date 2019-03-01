@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "gid": 47152, "fclass": "travel_agent", "name": "JR East Travel Service Centre" }, "geometry": { "type": "Point", "coordinates": [ 139.700624839822297, 35.688440228303158 ] } },
+{ "type": "Feature", "properties": { "gid": 47218, "fclass": "travel_agent", "name": "Tokyo Tourism Information" }, "geometry": { "type": "Point", "coordinates": [ 139.700545524891282, 35.688128280541029 ] } },
+{ "type": "Feature", "properties": { "gid": 50080, "fclass": "travel_agent", "name": "エアポートトラベル" }, "geometry": { "type": "Point", "coordinates": [ 140.504998649999976, 35.81586675 ] } }
+]
+}
