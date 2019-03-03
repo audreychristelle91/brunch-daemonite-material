@@ -2,32 +2,19 @@ var $ = jQuery = require('jquery');
 require('textillate');
 
 var app = {
-
     layers:{},
     markers:null,
     loadMap: function () {
+        var token ="pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
 
-        /*mapboxgl.accessToken = 'pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA';
-        var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [138.252924, 36.204824],
-            zoom: 6
-        });*/
-
-        var map = L.map('map', {
-            center: [36.204824, 138.252924],
-            zoom: 10,
-            maxZoom: 18,
-            minZoom: 4
-        });
-
-        // Adding Mapbox
+        var map = L.map('map',{
+                maxZoom: 18,
+                minZoom: 4
+        }).setView([ 36.204824, 138.252924], 7);
         var gl = L.mapboxGL({
-            accessToken: 'pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA',
+            accessToken: token,
             style: 'mapbox://styles/mapbox/streets-v11'
         }).addTo(map);
-        map.fitWorld();
 
         return map;
     },
@@ -51,34 +38,12 @@ var app = {
     },
     init: function(){
 
-		$('.test').textillate({ in: { effect: 'flip' } });
-	//	$('#myNavdrawer').navdrawer();
-		$("form[name='registration']").validate({
-	    // Specify validation rules
-	    rules: {
-	      champ1: "required",
-	    },
-	    // Specify validation error messages
-	    messages: {
-	      champ1: "Please enter your firstname",
-	    },
-	    // Make sure the form is submitted to the destination defined
-	    // in the "action" attribute of the form when valid
-	    submitHandler: function(form) {
-	      form.submit();
-	    }
-	  });
-
     //slider
         $('.carousel').carousel();
         $('.next').click(function(){ $('.carousel').carousel('next');return false; });
         $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
 
-
         var map = app.loadMap();
-
-        //var geo = app.loadTypeOfPoi(map, "atm");
-
         var menuFilter = new Vue({
           el: '#marker-filter',
           data: {
@@ -108,7 +73,18 @@ var app = {
                   var geo = app.loadTypeOfPoi(map, type);
               }
           }
-      })
+      });
+
+        $.getJSON( "http://esombe-5.scan-world.info/posts/Japon/0/6", function( data ) {
+            var menuFilter = new Vue({
+                el: '#articles',
+                data: {
+                    items1: data.slice(0, 3),
+                    items2: data.slice(3, 6)
+                }
+            });
+        });
+
   }
 
 };
