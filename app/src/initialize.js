@@ -42,7 +42,13 @@ var app = {
         $('.carousel').carousel();
         $('.next').click(function(){ $('.carousel').carousel('next');return false; });
         $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+        
+    //menu
+        $('#button-menu').click(function(){
+        //  document.getElementById("nav-filter").classList.toggle("visible");
+          $("#nav-filter").toggleClass( "visible" );
 
+        });
         var map = app.loadMap();
         var menuFilter = new Vue({
           el: '#marker-filter',
