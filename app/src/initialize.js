@@ -5,15 +5,14 @@ var app = {
     layers:{},
     markers:null,
     loadMap: function () {
-        var token ="pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
-
+      var token ="pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
         var map = L.map('map',{
                 maxZoom: 18,
                 minZoom: 4
         }).setView([ 36.204824, 138.252924], 7);
         var gl = L.mapboxGL({
             accessToken: token,
-            style: 'mapbox://styles/mapbox/streets-v11'
+            style: 'mapbox://styles/saori91/cjj0csi7n0g6r2smpzioxf30j'
         }).addTo(map);
 
         return map;
@@ -42,13 +41,22 @@ var app = {
         $('.carousel').carousel();
         $('.next').click(function(){ $('.carousel').carousel('next');return false; });
         $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
-        
-    //menu
-        $('#button-menu').click(function(){
-        //  document.getElementById("nav-filter").classList.toggle("visible");
-          $("#nav-filter").toggleClass( "visible" );
 
+    //menu
+        var changeText = new Vue({
+          el:'#slide-menu-btn' ,
+          data: {
+            message: 'Open'
+          },
+          methods: {
+            changeText: function (){
+
+              $("#nav-filter").toggleClass( "visible" );
+
+            }
+          }
         });
+
         var map = app.loadMap();
         var menuFilter = new Vue({
           el: '#marker-filter',

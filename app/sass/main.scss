@@ -83,9 +83,19 @@ body {
 }
 
 #button-menu {
-	background: #180614;
+	background: #640125;
+	border-style: none;
 	color: white;
+	height: 2.5rem;
+	margin-top: 1rem;
+  margin-left: 0.8rem;
+	width: 6rem;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
 }
+
+
 
 /* equal card height */
 .row-equal > div[class*='col-'] {

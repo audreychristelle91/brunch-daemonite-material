@@ -59,8 +59,9 @@
 				<div id="marker-filter">
 					<button v-on:click="addMarkers(todo.type)" v-for="todo in todos" >{{ todo.text }}</button>
 				</div>
-
-				<button id="button-menu" type="button" name="button">click</button>
+				<div id="slide-menu-btn">
+					<button v-on:click="changeText" id="button-menu" type="button" name="button" class="btn">{{ message }}</button>
+				</div>
 			</nav>
 			<div id="map"></div>
 		</div>
