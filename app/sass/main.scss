@@ -73,7 +73,8 @@ body {
 
 #nav-filter {
 	width: 10vw;
-  background-color: coral;
+  background-color: #f2c9ac;
+	transition: height 200ms, width 200ms;
 }
 
 #nav-filter.visible {
@@ -81,11 +82,10 @@ body {
 	width: 40vw;
 }
 
-
-
-
-
-//
+#button-menu {
+	background: #180614;
+	color: white;
+}
 
 /* equal card height */
 .row-equal > div[class*='col-'] {
