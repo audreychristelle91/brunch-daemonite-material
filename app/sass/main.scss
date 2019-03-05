@@ -87,6 +87,7 @@ body {
 	color: white;
 	height: 2.5rem;
   margin-left: 0.8rem;
+	margin-top: 1em;
 	width: 6rem;
 	text-transform: uppercase;
 	text-align: center;
@@ -97,8 +98,11 @@ body {
 	margin-top: 1.5em;
 }
 
-.btn-marker {
-	margin-left: 1em;
+a.btn-marker {
+	margin-left: 3em;
+}
+
+img.img-marker {
 	margin-bottom: 1em;
 }
 

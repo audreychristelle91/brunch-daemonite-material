@@ -57,7 +57,9 @@
 			<nav id= "nav-filter">
 
 				<div id="marker-filter">
-					<button class="btn-marker" v-on:click="addMarkers(todo.type)" v-for="todo in todos" >{{ todo.text }}</button>
+					<a v-on:click="addMarkers(todo.type)" v-for="todo in todos" href="#" class="btn-marker">
+						<img class="img-marker" src="img/markers/icon-test.png" style="width:2rem;" v-bind:title="todo.text" v-bind:alt="todo.text">
+					</a>
 				</div>
 				<div id="slide-menu-btn">
 					<button v-on:click="changeText" id="button-menu" type="button" name="button" class="btn">{{ message }}</button>
