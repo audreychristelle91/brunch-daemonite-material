@@ -87,7 +87,6 @@ body {
 	border-style: none;
 	color: white;
 	height: 2.5rem;
-	margin-top: 1rem;
   margin-left: 0.8rem;
 	width: 6rem;
 	text-transform: uppercase;
@@ -95,7 +94,14 @@ body {
 	text-decoration: none;
 }
 
+#marker-filter {
+	margin-top: 1.5em;
+}
 
+.btn-marker {
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
 
 /* equal card height */
 .row-equal > div[class*='col-'] {
