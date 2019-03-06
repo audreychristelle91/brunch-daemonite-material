@@ -51,7 +51,33 @@ body {
 	width: 100px;
 }
 
+// Markers Cluster
+.marker-cluster-large div {
+	background-color: rgba(238,130,124,0.8) !important;
+}
 
+.marker-cluster-large {
+	background-color: rgba(238,130,124,0.4) !important;
+}
+
+
+.marker-cluster-medium div {
+	background-color: rgba(243,152,0,0.8) !important;
+}
+
+
+.marker-cluster-medium {
+	background-color: rgba(243,152,0,0.4) !important;
+}
+
+
+.marker-cluster-small div {
+	background-color: rgba(184,210,0,0.8) !important;
+}
+
+.marker-cluster-small {
+	background-color: rgba(184,210,0,0.4) !important;
+}
 
 //Map style
 
