@@ -5,7 +5,7 @@ var app = {
     layers:{},
     markers:null,
     loadMap: function () {
-      var token ="pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
+      var token ="token"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
         var map = L.map('map',{
                 maxZoom: 18,
                 minZoom: 4
@@ -29,6 +29,19 @@ var app = {
         var currentLayerPoi = omnivore.geojson(url)
             .on("ready", function() {
                 console.log("add markers");
+                //customize marker
+                var redIcon = L.icon({
+                  iconUrl: 'img/markers/icon.png',
+                  iconSize:     [25, 38],
+                  iconAnchor:   [12, 55],
+                  popupAnchor:  [-3, -76]
+              });
+                currentLayerPoi.eachLayer(function(layer) {
+
+                      if (layer instanceof L.Marker) {
+                        layer.setIcon(redIcon);
+                      }
+                });
                 app.markers.addLayer( currentLayerPoi );
                 app.markers.addTo(map);
             });
