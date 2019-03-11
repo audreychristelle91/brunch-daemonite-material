@@ -5,7 +5,7 @@ var app = {
     layers:{},
     markers:null,
     loadMap: function () {
-      var token ="pk.eyJ1IjoibWF0aGlhc2dhYnJpZWwiLCJhIjoiY2prem1yYnhtMHZ1MjNwcWpxdzU1NXNuNyJ9.51ZtenOgQKImt4uVcp5mPA"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
+      var token =token; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
         var map = L.map('map',{
                 maxZoom: 18,
                 minZoom: 4
