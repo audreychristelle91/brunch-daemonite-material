@@ -29,6 +29,19 @@ var app = {
         var currentLayerPoi = omnivore.geojson(url)
             .on("ready", function() {
                 console.log("add markers");
+                //customize marker
+                var redIcon = L.icon({
+                  iconUrl: 'img/markers/icon.png',
+                  iconSize:     [25, 38],
+                  iconAnchor:   [12, 55],
+                  popupAnchor:  [-3, -76]
+              });
+                currentLayerPoi.eachLayer(function(layer) {
+
+                      if (layer instanceof L.Marker) {
+                        layer.setIcon(redIcon);
+                      }
+                });
                 app.markers.addLayer( currentLayerPoi );
                 app.markers.addTo(map);
             });
