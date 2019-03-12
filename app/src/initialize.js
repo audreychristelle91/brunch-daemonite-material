@@ -5,7 +5,7 @@ var app = {
     layers:{},
     markers:null,
     loadMap: function () {
-      var token =token; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
+      var token = token; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
         var map = L.map('map',{
                 maxZoom: 18,
                 minZoom: 4
@@ -56,15 +56,25 @@ var app = {
         $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
 
     //menu
+    //Data's initialization
         var changeText = new Vue({
           el:'#slide-menu-btn' ,
           data: {
-            message: 'Open'
+            message: 'Open',
+            status: true
           },
           methods: {
             changeText: function (){
 
               $("#nav-filter").toggleClass( "visible" );
+              // change open to close
+              if (this.status){
+                this.message = 'Close';
+                this.status = false;
+              } else {
+                this.message = 'Open';
+                this.status = true;
+              }
 
             }
           }
