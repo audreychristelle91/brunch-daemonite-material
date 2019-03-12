@@ -87,6 +87,10 @@ body {
 }
 
 
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+	font-size: 0px;
+}
+
 //Menu filter
 
 .content {
@@ -123,6 +127,14 @@ body {
 #marker-filter {
 	margin-top: 1.5em;
 }
+
+
+/************************** CAROUSEL ************************************/
+
+#articles {
+	display: flex;
+}
+
 
 a.btn-marker {
 	margin-left: 3em;
