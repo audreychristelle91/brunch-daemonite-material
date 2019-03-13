@@ -103,7 +103,7 @@ body {
 
 #nav-filter {
 	width: 10vw;
-  background-color: #f2c9ac;
+  background-color: rgba(242,201,172, 0.85);
 	transition: height 200ms, width 200ms;
 }
 
@@ -113,8 +113,8 @@ body {
 
 #button-menu {
 	background: #640125;
-	border-style: none;
 	color: white;
+	border-style: none;
 	height: 2.5rem;
   margin-left: 0.8rem;
 	margin-top: 1em;
@@ -122,6 +122,13 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	text-decoration: none;
+}
+
+#button-menu:hover {
+	border: solid 1px #640125;
+	background: transparent;
+	color: #640125;
+	transition: all 0.8s ease-out;
 }
 
 #marker-filter {
