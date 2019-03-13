@@ -131,11 +131,6 @@ body {
 
 /************************** CAROUSEL ************************************/
 
-#articles {
-	display: flex;
-}
-
-
 a.btn-marker {
 	margin-left: 3em;
 }
@@ -177,4 +172,60 @@ img.img-marker {
 .card-img-top-250 {
 	max-height: 250px;
 	overflow:hidden;
+}
+
+/************************** CARDS ************************************/
+button:focus {
+	outline: inherit;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+	justify-content: space-evenly;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.card {
+  flex: 0 0 320px;
+	margin-left: 1em;
+  margin-top: 2em;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .text {
+	margin-top: 2em;
+  padding: 0 20px 20px;
+}
+
+.card .text > button {
+  background: rgba(242,201,172, 0.7);
+  border: 0;
+  color: #180614;
+	margin-bottom: 1em;
+  padding: 10px;
+  width: 100%;
+	text-transform: uppercase;
+}
+
+.card .text > button:hover {
+	background: #d7a98c;
+	color: white;
+	transition: all 0.8s ease-out;
+}
+
+.card .text > p {
+	color:#180614;
+	font-size: 1.2em;
+	margin-bottom: 2.5rem;
+}
+
+.card .text > h3 {
+	color:#180614;
+	margin-bottom: 0.5em;
 }
