@@ -5,7 +5,7 @@ var app = {
     layers:{},
     markers:null,
     loadMap: function () {
-      var token = token; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
+      var token =token; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
         var map = L.map('map',{
                 maxZoom: 18,
                 minZoom: 4
@@ -32,7 +32,7 @@ var app = {
                 //customize marker
                 var redIcon = L.icon({
                   iconUrl: 'img/markers/icon.png',
-                  iconSize:     [25, 38],
+                  iconSize:     [15, 22],
                   iconAnchor:   [12, 55],
                   popupAnchor:  [-3, -76]
               });
