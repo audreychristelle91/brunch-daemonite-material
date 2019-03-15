@@ -150,6 +150,7 @@ img.img-marker {
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
 	border:none;
 }
+/* articles' carousel  * /
 /* equal card height */
 .row-equal > div[class*='col-'] {
 	display: flex;
@@ -182,7 +183,7 @@ img.img-marker {
 }
 
 /************************** CARDS ************************************/
-button:focus {
+.button:focus {
 	outline: inherit;
 }
 
@@ -210,20 +211,24 @@ button:focus {
   padding: 0 20px 20px;
 }
 
-.card .text > button {
+.card .text > .button {
   background: rgba(242,201,172, 0.7);
   border: 0;
   color: #180614;
 	margin-bottom: 1em;
-  padding: 10px;
+  padding: 1em;
   width: 100%;
+	text-align: center;
 	text-transform: uppercase;
+	text-decoration: none;
 }
 
-.card .text > button:hover {
-	background: #d7a98c;
-	color: white;
-	transition: all 0.8s ease-out;
+.card .text > .button:hover {
+	background: white;
+	border: solid 1px #d7a98c;
+	color: #d7a98c;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
 }
 
 .card .text > p {

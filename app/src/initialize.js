@@ -112,12 +112,11 @@ var app = {
           }
       });
 
-        $.getJSON( "http://esombe-5.scan-world.info/posts/Japon/0/6", function( data ) {
+        $.getJSON( "http://esombe-5.scan-world.info/posts/Japon/0/3", function( data ) {
             var menuFilter = new Vue({
                 el: '#articles',
                 data: {
-                    items1: data.slice(0, 3),
-                    items2: data.slice(3, 6)
+                    items: data
                 }
             });
         });
