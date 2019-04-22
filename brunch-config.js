@@ -1,4 +1,9 @@
 // See http://brunch.io for documentation.
+
+exports.server = {
+      hostname: "0.0.0.0"
+}
+
 exports.files = {
   javascripts: {
     joinTo: {

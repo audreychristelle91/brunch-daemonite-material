@@ -38,8 +38,19 @@ Installer une nouvelle dépendance et l'ajouter dans le package json
 
 Déclarer la librairie dans le brunch-config.js, dans export.npm
 
+## Docker
+```
+docker-compose build nodejs
+docker-compose up -d nodejs
+
+```
+
 ## Contribute
 
 Auteure: Audrey Mohimbouabéka
 
 audrey.mohimbouabeka@medasys.com
+
+Auteur: Mathias GABRIEL
+
+mathiasgabriel@live.fr
