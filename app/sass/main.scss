@@ -154,7 +154,7 @@ footer a:hover{
 
 #nav-filter {
 	width: 10vw;
-  background-color: #f2c9ac;
+  background-color: rgba(242,201,172, 0.85);
 	transition: height 200ms, width 200ms;
 }
 
@@ -164,8 +164,8 @@ footer a:hover{
 
 #button-menu {
 	background: #640125;
-	border-style: none;
 	color: white;
+	border-style: none;
 	height: 2.5rem;
   margin-left: 0.8rem;
 	margin-top: 1em;
@@ -175,17 +175,19 @@ footer a:hover{
 	text-decoration: none;
 }
 
+#button-menu:hover {
+	border: solid 1px #640125;
+	background: transparent;
+	color: #640125;
+	transition: all 0.8s ease-out;
+}
+
 #marker-filter {
 	margin-top: 1.5em;
 }
 
 
 /************************** CAROUSEL ************************************/
-
-#articles {
-	display: flex;
-}
-
 
 a.btn-marker {
 	margin-left: 3em;
@@ -199,6 +201,7 @@ img.img-marker {
 .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
 	border:none;
 }
+/* articles' carousel  * /
 /* equal card height */
 .row-equal > div[class*='col-'] {
 	display: flex;
@@ -229,4 +232,64 @@ img.img-marker {
 	max-height: 250px;
 	overflow:hidden;
 >>>>>>> dev
+}
+
+/************************** CARDS ************************************/
+.button:focus {
+	outline: inherit;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+	justify-content: space-evenly;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.card {
+  flex: 0 0 320px;
+	margin-left: 1em;
+  margin-top: 2em;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card .text {
+	margin-top: 2em;
+  padding: 0 20px 20px;
+}
+
+.card .text > .button {
+  background: rgba(242,201,172, 0.7);
+  border: 0;
+  color: #180614;
+	margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.card .text > .button:hover {
+	background: white;
+	border: solid 1px #d7a98c;
+	color: #d7a98c;
+	text-decoration: none;
+	transition: all 0.5s ease-out;
+}
+
+.card .text > p {
+	color:#180614;
+	font-size: 1.2em;
+	margin-bottom: 2.5rem;
+}
+
+.card .text > h3 {
+	color:#180614;
+	margin-bottom: 0.5em;
 }

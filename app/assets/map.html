@@ -58,7 +58,7 @@
 
 				<div id="marker-filter">
 					<a v-on:click="addMarkers(todo.type)" v-for="todo in todos" href="#" class="btn-marker">
-						<img class="img-marker" src="img/markers/icon-test.png" style="width:2rem;" v-bind:title="todo.text" v-bind:alt="todo.text">
+						<img class="img-marker"src="img/markers/icon-test.png" style="width:2rem;" v-bind:title="todo.text" v-bind:alt="todo.text">
 					</a>
 				</div>
 				<div id="slide-menu-btn">
@@ -68,10 +68,14 @@
 			<div id="map"></div>
 		</div>
 
-		<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+
+<!-- **************** CAROUSEL CARD ********************************* -->
+
+<!--		<section class="carousel slide" data-ride="carousel" id="postsCarousel">
+
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 text-md-right lead">
+					<div class="col-xs-12 text-center lead">
 
 						<a class="btn btn-outline-secondary prev carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 							<span class="" aria-hidden="true"></span>
@@ -81,13 +85,13 @@
 							<span class="" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
-
 					</div>
 				</div>
 			</div>
+
+
 			<div id="articles" class="container p-t-0 m-t-2 carousel-inner">
 				<div class="row row-equal carousel-item active m-t-0">
-
 					<div class="col-md-4" v-for="item in items1" >
 						<div class="card">
 							<div class="card-img-top card-img-top-250">
@@ -101,10 +105,9 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
-				<div class="row row-equal carousel-item m-t-0">
 
+				<div class="row row-equal carousel-item m-t-0">
 					<div class="col-md-4" v-for="item in items2" >
 						<div class="card">
 							<div class="card-img-top card-img-top-250">
@@ -118,10 +121,23 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-		</section>
+		</section> -->
+
+		<main id="articles" class="cards">
+		  <article class="card" v-for="item in items">
+		    <img v-bind:src="item.urlImage" >
+		    <div class="text">
+		      <h3>{{item.title}}</h3>
+		      <p>{{item.content}}</p>
+					<a class="button btn-block" v-bind:href="item.link">
+		      	Here's why
+					</a>
+		    </div>
+		  </article>
+		</main>
+
 
 		<!-- Page Content -->
 		<div class="container">
