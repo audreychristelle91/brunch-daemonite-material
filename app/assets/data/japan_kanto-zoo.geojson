@@ -1,0 +1,38 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "gid": 430, "fclass": "zoo", "name": "智光山動物公園" }, "geometry": { "type": "Point", "coordinates": [ 139.394158272849864, 35.88075045655134 ] } },
+{ "type": "Feature", "properties": { "gid": 487, "fclass": "zoo", "name": "リスの家" }, "geometry": { "type": "Point", "coordinates": [ 139.640853631764315, 35.932825063060676 ] } },
+{ "type": "Feature", "properties": { "gid": 1979, "fclass": "zoo", "name": "よこはま動物園ズーラシア" }, "geometry": { "type": "Point", "coordinates": [ 139.523620999136654, 35.495978359626335 ] } },
+{ "type": "Feature", "properties": { "gid": 8057, "fclass": "zoo", "name": "東京都井の頭自然文化園" }, "geometry": { "type": "Point", "coordinates": [ 139.571022612021721, 35.700851124689343 ] } },
+{ "type": "Feature", "properties": { "gid": 8266, "fclass": "zoo", "name": "ポニーランド" }, "geometry": { "type": "Point", "coordinates": [ 139.914813201126407, 35.705892064194025 ] } },
+{ "type": "Feature", "properties": { "gid": 9098, "fclass": "zoo", "name": "横浜市立野毛山動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.622675575293528, 35.447432416209466 ] } },
+{ "type": "Feature", "properties": { "gid": 9823, "fclass": "zoo", "name": "羽村市動物公園" }, "geometry": { "type": "Point", "coordinates": [ 139.328865567539509, 35.767152280590423 ] } },
+{ "type": "Feature", "properties": { "gid": 12739, "fclass": "zoo", "name": "足立区生物園" }, "geometry": { "type": "Point", "coordinates": [ 139.807224863584821, 35.792404326498009 ] } },
+{ "type": "Feature", "properties": { "gid": 15191, "fclass": "zoo", "name": "宇都宮動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.854585797994076, 36.63250068073684 ] } },
+{ "type": "Feature", "properties": { "gid": 16215, "fclass": "zoo", "name": "埼玉県こども動物自然公園" }, "geometry": { "type": "Point", "coordinates": [ 139.374782340368114, 35.996064337575902 ] } },
+{ "type": "Feature", "properties": { "gid": 16220, "fclass": "zoo", "name": "料金所" }, "geometry": { "type": "Point", "coordinates": [ 139.375552682205978, 36.000715024332614 ] } },
+{ "type": "Feature", "properties": { "gid": 19261, "fclass": "zoo", "name": "万騎が原ちびっこ動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.53486801761008, 35.449604519213068 ] } },
+{ "type": "Feature", "properties": { "gid": 19536, "fclass": "zoo", "name": "ぐんま昆虫の森" }, "geometry": { "type": "Point", "coordinates": [ 139.254351911010758, 36.436526022966063 ] } },
+{ "type": "Feature", "properties": { "gid": 27942, "fclass": "zoo", "name": "横浜市立金沢動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.597119763678734, 35.349662870827167 ] } },
+{ "type": "Feature", "properties": { "gid": 28290, "fclass": "zoo", "name": "井の頭自然文化園（分園）" }, "geometry": { "type": "Point", "coordinates": [ 139.575737301787655, 35.700119496332128 ] } },
+{ "type": "Feature", "properties": { "gid": 28292, "fclass": "zoo", "name": "恩賜上野動物園（西園）" }, "geometry": { "type": "Point", "coordinates": [ 139.769972563471555, 35.713886940408855 ] } },
+{ "type": "Feature", "properties": { "gid": 32380, "fclass": "zoo", "name": "日立市かみね動物園" }, "geometry": { "type": "Point", "coordinates": [ 140.659141944114793, 36.607547892054733 ] } },
+{ "type": "Feature", "properties": { "gid": 34232, "fclass": "zoo", "name": "那須サファリパーク" }, "geometry": { "type": "Point", "coordinates": [ 140.004502649824218, 37.058717956212647 ] } },
+{ "type": "Feature", "properties": { "gid": 36021, "fclass": "zoo", "name": "桐生が岡動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.339863251698944, 36.420647306293567 ] } },
+{ "type": "Feature", "properties": { "gid": 38131, "fclass": "zoo", "name": null }, "geometry": { "type": "Point", "coordinates": [ 139.154623893328278, 35.250829483472423 ] } },
+{ "type": "Feature", "properties": { "gid": 38776, "fclass": "zoo", "name": "子供動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.714961948398269, 35.884196300448266 ] } },
+{ "type": "Feature", "properties": { "gid": 40182, "fclass": "zoo", "name": "千葉市動物公園" }, "geometry": { "type": "Point", "coordinates": [ 140.126848238657999, 35.645496231708911 ] } },
+{ "type": "Feature", "properties": { "gid": 42508, "fclass": "zoo", "name": "夢見ヶ崎動物公園" }, "geometry": { "type": "Point", "coordinates": [ 139.664770075875452, 35.549757757475405 ] } },
+{ "type": "Feature", "properties": { "gid": 43840, "fclass": "zoo", "name": "鹿園" }, "geometry": { "type": "Point", "coordinates": [ 140.633104352531262, 35.97004238357141 ] } },
+{ "type": "Feature", "properties": { "gid": 45497, "fclass": "zoo", "name": "子供動物園すてっぷ" }, "geometry": { "type": "Point", "coordinates": [ 139.77152695904698, 35.713897221404615 ] } },
+{ "type": "Feature", "properties": { "gid": 45719, "fclass": "zoo", "name": "江戸川区自然動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.858374805187339, 35.671049196241277 ] } },
+{ "type": "Feature", "properties": { "gid": 45834, "fclass": "zoo", "name": "恩賜上野動物園（東園）" }, "geometry": { "type": "Point", "coordinates": [ 139.771264201749119, 35.716632162561304 ] } },
+{ "type": "Feature", "properties": { "gid": 48943, "fclass": "zoo", "name": null }, "geometry": { "type": "Point", "coordinates": [ 139.638431131933629, 35.933015481091658 ] } },
+{ "type": "Feature", "properties": { "gid": 53790, "fclass": "zoo", "name": "どうぶつ広場" }, "geometry": { "type": "Point", "coordinates": [ 139.759045672806025, 35.753779613668407 ] } },
+{ "type": "Feature", "properties": { "gid": 54196, "fclass": "zoo", "name": "大宮公園小動物園" }, "geometry": { "type": "Point", "coordinates": [ 139.63227140885445, 35.918589693150444 ] } },
+{ "type": "Feature", "properties": { "gid": 56428, "fclass": "zoo", "name": "市川市動植物園" }, "geometry": { "type": "Point", "coordinates": [ 139.965141385760489, 35.764617018492146 ] } }
+]
+}

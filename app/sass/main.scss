@@ -1,4 +1,14 @@
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
 
+
+.container-map {
+    display: flex;
+    flex: 1;
+}
 
 .carousel-control-next {
 	background-image: url('../img/arrow_next.png');
@@ -41,7 +51,33 @@
 	width: 100px;
 }
 
+// Markers Cluster
+.marker-cluster-large div {
+	background-color: rgba(238,130,124,0.8) !important;
+}
 
+.marker-cluster-large {
+	background-color: rgba(238,130,124,0.4) !important;
+}
+
+
+.marker-cluster-medium div {
+	background-color: rgba(243,152,0,0.8) !important;
+}
+
+
+.marker-cluster-medium {
+	background-color: rgba(243,152,0,0.4) !important;
+}
+
+
+.marker-cluster-small div {
+	background-color: rgba(184,210,0,0.8) !important;
+}
+
+.marker-cluster-small {
+	background-color: rgba(184,210,0,0.4) !important;
+}
 
 //Map style
 
@@ -51,6 +87,7 @@
 }
 
 
+<<<<<<< HEAD
 
 // footer
 
@@ -100,4 +137,96 @@ footer a:hover{
   border-top:5px solid orange;
  background: white;
   color: black;
+=======
+.leaflet-container .leaflet-control-attribution, .leaflet-container .leaflet-control-scale {
+	font-size: 0px;
+}
+
+//Menu filter
+
+.content {
+	padding: 2rem;
+	color: darkslategrey;
+	font-size: 2rem;
+	width: 60vw;
+	margin: 2rem auto;
+}
+
+#nav-filter {
+	width: 10vw;
+  background-color: #f2c9ac;
+	transition: height 200ms, width 200ms;
+}
+
+#nav-filter.visible {
+	width: 40vw;
+}
+
+#button-menu {
+	background: #640125;
+	border-style: none;
+	color: white;
+	height: 2.5rem;
+  margin-left: 0.8rem;
+	margin-top: 1em;
+	width: 6rem;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+
+#marker-filter {
+	margin-top: 1.5em;
+}
+
+
+/************************** CAROUSEL ************************************/
+
+#articles {
+	display: flex;
+}
+
+
+a.btn-marker {
+	margin-left: 3em;
+}
+
+img.img-marker {
+	margin-bottom: 1em;
+}
+
+//Zoom - Dezoom map
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+	border:none;
+}
+/* equal card height */
+.row-equal > div[class*='col-'] {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+.row-equal .card {
+	width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active,
+.carousel-inner>.row-equal.next,
+.carousel-inner>.row-equal.prev {
+	display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left,
+.carousel-inner>.row-equal.active.right {
+	opacity: 0.5;
+	display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+	max-height: 250px;
+	overflow:hidden;
+>>>>>>> dev
 }
