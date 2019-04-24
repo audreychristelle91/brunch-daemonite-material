@@ -2,12 +2,23 @@ version: '2'
 
 services:
 
-  nodejs:
-    build: .
+  base:
+    image: node:11
     volumes:
-      - ".:/src/"
+      - .:/usr/src/service/
+    working_dir: /usr/src/service/
+
+  install:
+    extends:
+      service: base
+    command: npm i
+
+  integration:
+    extends:
+      service: base
+    command: npm start
     ports:
-      - "3333:3333"
+      - 3333:3333
 
   wordpress:
     build:
