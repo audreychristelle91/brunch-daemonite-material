@@ -134,8 +134,10 @@ body {
 	margin-top: 1.5em;
 }
 
-
-/************************** CAROUSEL ************************************/
+//Zoom - Dezoom map
+.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
+	border:none;
+}
 
 a.btn-marker {
 	margin-left: 3em;
@@ -144,11 +146,8 @@ a.btn-marker {
 img.img-marker {
 	margin-bottom: 1em;
 }
+/************************** CAROUSEL ************************************/
 
-//Zoom - Dezoom map
-.leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
-	border:none;
-}
 /* articles' carousel  * /
 /* equal card height */
 .row-equal > div[class*='col-'] {
