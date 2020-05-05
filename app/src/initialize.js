@@ -5,7 +5,7 @@ var app = {
     layers:{},
     markers:null,
     loadMap: function () {
-      var token =token; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
+      var token ="pk.eyJ1Ijoic2Fvcmk5MSIsImEiOiJjajBvYTZ6ZDkwMDE3MndudHp0eGVjcjZiIn0.osO2WYimEZtqZA34UpAY5w"; // replace with your Mapbox API Access token. Create a Mabpox account and find it on https://www.mapbox.com/studio/
         var map = L.map('map',{
                 maxZoom: 18,
                 minZoom: 4
@@ -80,7 +80,7 @@ var app = {
           }
         });
 
-        var map = app.loadMap();
+//        var map = app.loadMap();
         var menuFilter = new Vue({
           el: '#marker-filter',
           data: {
